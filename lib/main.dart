@@ -1,3 +1,4 @@
+
 import 'dart:html';
 
 import 'package:flutter/material.dart';
@@ -15,7 +16,32 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp
     (
-      home: Scaffold(appBar: AppBar(title:const Text('Flutter First-App'),),),
+      home: Scaffold(
+        appBar:
+         AppBar(title:const Text('Flutter First-App'),),
+         body:
+          Column(
+            children: [
+              Container(            
+                child: Column(
+                  children: [Text('Container-1'),
+                  Row(children: [Text('data '),Text('data 2')],)
+                  ],),
+                color: Colors.yellow,
+                height: 200,
+                width: 400,
+                ),
+                             Container(            
+                child: Column(
+                  children: [Text('Container-2'),
+                  Row(children: [Text('data '),Text('data 2')],)
+                  ],),
+                color: Colors.blue,
+                height: 200,
+                width: 400,
+                ),
+            ],
+          ) ,),
     );
   }
 }
