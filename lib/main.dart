@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
                   ),Row(children: [Text('data '),Text('data 2')],                  
                   ),
                   ],),
-                color: Colors.blue,
+                color: Colors.red,
                 height: 200,
                 width: 400,
                 ),
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
                   children: [Text('Container-3'),
                   Row(children: [Text('data '),Text('data 2')],)
                   ],),
-                color: Colors.red,
+                color: Colors.blue,
                 height: 200,
                 width: 400,
                 ),
