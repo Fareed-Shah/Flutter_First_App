@@ -1,6 +1,4 @@
 
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 
@@ -31,12 +29,26 @@ class MyApp extends StatelessWidget {
                 height: 200,
                 width: 400,
                 ),
-                             Container(            
+                Container(            
                 child: Column(
                   children: [Text('Container-2'),
-                  Row(children: [Text('data '),Text('data 2')],)
+                  Row(children: [Text('data '),Text('data 2')],                  
+                  ),
+                  Column(
+                    children: [Text('data')],
+                  ),Row(children: [Text('data '),Text('data 2')],                  
+                  ),
                   ],),
                 color: Colors.blue,
+                height: 200,
+                width: 400,
+                ),
+                Container(            
+                child: Column(
+                  children: [Text('Container-3'),
+                  Row(children: [Text('data '),Text('data 2')],)
+                  ],),
+                color: Colors.red,
                 height: 200,
                 width: 400,
                 ),
